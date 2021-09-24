@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #08090B;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    padding: 40px;
+    gap: 20px;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#employeesNumber {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 150px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000AA;
+}
+
+section>form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+form .button-in-search-employee {
+    font-size: 30px;
+    width: 50px;
+}
+
+#cadastroContainer,
+#editContainer {
+    display: none;
+}
+
+.modal {
+    align-items: center;
+    justify-content: center;
+    background-color: #00000090;
+    color: black;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+#cadastroContainer form,
+#editContainer form {
+    background-color: #dedede;
+    border-radius: 30px;
+    height: 450px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#formularioQuestoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    align-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+#cadastroContainer form input,
+#editContainer form input {
+    width: 100%;
+    height: 40px;
+}
+
+.eachQuestion {
+    width: 150px;
+    height: 25px;
+}
+
+h3 {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#cadastroContainer button,
+#editContainer button {
+    margin-top: 50px;
+    height: 40px;
+    width: 50%;
+}
+
+#buttonCancelarCadastro {
+    flex: 1;
+}
+
+#buttonCadastrar {
+    flex: 2;
+}
+
+#buttonCancelarCadastro:hover {
+    background-color: red;
+    color: white;
+}
+
+#buttonCadastrar:hover {
+    background-color: #0000AA;
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #2c2a2a99;
+}
+
+table tr:nth-child(odd) {
+    background-color: #07070799;
+}
+
+table tr:hover {
+    background-color: #3d3f44;
+}
+
+table tr {
+    height: 60px;
+}
+
+table tr th {
+    background-color: #0000AA;
+}
+
+table td,
+th {
+    border: 1px solid #FFF;
+    padding: 10px;
+}
+
+table tr td:last-of-type {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+#deleteUser {
+    width: 30px;
+}
+
+#deleteUser:hover {
+    background-color: #AA0000;
+}
+
+#deleteContainer {
+    display: none;
+}
+
+#askContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 400px;
+    background-color: #dedede;
+    border-radius: 30px;
+}
+
+#askContainer .buttonContainer {
+    padding: 10px;
+    gap: 10px;
+}
+
+#askContainer .buttonContainer button {
+    width: 100%;
+}
+
+.red:hover {
+    color: white;
+    background-color: #AA0000;
+}
+
+.green {
+    background-color: #00AA00;
+}
+
+#editUser {
+    width: 30px;
+}
+
+input,
+select {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #0000AA;
+    color: white;
+}
+
+@media (min-width: 1400px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
