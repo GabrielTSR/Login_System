@@ -68,7 +68,6 @@ function lerArquivo($nomeArquivo) {
             file_put_contents($pathData, $jasonNewUserList);
             realizarLogin($newUser['usuario'], $newUser['senha'], lerArquivo("./data/log.json"));
         } else {
-            echo 'lala';
             header('location: cadastro.php');
         }
     }
