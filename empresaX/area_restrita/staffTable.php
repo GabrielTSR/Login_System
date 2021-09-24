@@ -92,7 +92,7 @@ if(isset($_GET["buscarFuncionario"])){
         <form>
             <input type="text" name="buscarFuncionario" value="<?=$_GET["buscarFuncionario"] ?? "" ?>" placeholder="Search employee">
             <button class="button-in-search-employee"><i class="fas fa-search"></i></button>
-            <button class="button-in-search-employee" type="button"><i class="fas fa-user-circle"></i></button>
+            <button id="buttonCriarConta" class="button-in-search-employee" type="button"><i class="fas fa-user-circle"></i></button>
     </form>
     <table border="1">
         <tr>
