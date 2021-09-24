@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>SESSÕES NO PHP</title>
+    <title>LOGIN</title>
 
 </head>
 
@@ -33,15 +33,15 @@
                     </div>
 
                     <div class="form-group">
-                      <button class="btn btn-primary" type="submit">ENTRAR</button>
+                      <button class="btn btn-primary" type="submit">SIGN IN</button>
                     </div>
 
-                    <a href="">Esqueceu a senha?</a>
+                    <a href="">FORGOT YOUR PASSWORD?</a>
 
                     <div class="horizontal-bar"></div>
 
                     <div class="form-group centralized">
-                      <a href="cadastro.php" class="btn btn-primary btn-register">CRIAR NOVA CONTA</a>
+                      <a href="cadastro.php" class="btn btn-primary btn-register">CREATE AN ACCOUNT</a>
                     </div>
 
                 </form>
